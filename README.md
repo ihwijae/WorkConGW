@@ -426,7 +426,7 @@ $ cd WorkConGW
 ## 일정관리 트러블 슈팅
 <details>
  <surmary>일정관리 권한별 인서트</surmary>
- <blockquote>
+
 기존에는 우리 프로젝트의 조직도는 부서에도 직원이 들어가고, 팀에도 들어가있었다  
 그래서 권한별 등록은 생각하지 않고 DEPT_ID를 가져와서 해당 속한 부서 또는 팀 일정을 등록할 . 수있었는데,  
 팀에만 직원이 들어 있고 부서는 팀을 품고있는 구조로 변경하였다  
@@ -439,6 +439,6 @@ $ cd WorkConGW
 
 먼저 등록폼 컨트롤러에 부서장이라면 부서와, 팀 리스트를 따로 넘겨주었다  
 그 이유는 등록할때, 부서일정과 팀 일정의 코드가 다르다  
-https://private-user-images.githubusercontent.com/95358332/310795182-818af139-9168-4556-b9c4-80609a735cd0.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjU4NDk0MTIsIm5iZiI6MTcyNTg0OTExMiwicGF0aCI6Ii85NTM1ODMzMi8zMTA3OTUxODItODE4YWYxMzktOTE2OC00NTU2LWI5YzQtODA2MDlhNzM1Y2QwLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA5MDklMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwOTA5VDAyMzE1MlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTllY2FhZTA1ZjdlOTk4NzZkNmI0NDBjZjFjODVmZDI1NDFiZWY5MDVjYWE2ZWFmNTliZjVhYTZjMGRlODI1Y2MmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.DKmdzvRbkMURCSHySVRWFjOwoViiScWqUoY3X4AmfDg
- </blockquote>
+
+ 
 </details>
