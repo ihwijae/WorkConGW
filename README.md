@@ -449,7 +449,28 @@ $ cd WorkConGW
 이유는 일정을 조회 할때 팀원들은 dept_Id로 비교한다 즉, dept_Id로 해당 팀 일정을 조회하는 것  
 그래서 일정 그룹 별로 dept_Id를 다르게 넣어줘야 했다  
 <img width="679" alt="image" src="https://github.com/user-attachments/assets/650d8f17-6d09-4d36-a169-9e1621b65a89">
-
-
- 
 </details>
+
+<br>
+
+<summary>일정관리 권한별 인서트</summary>
+
+❗️일정관리 기능에서 일정 조회시 권한 별로 셀렉 결과가 달라야 하는데 기존에는 이런 권한별 셀렉을 생각하지 못했다  
+
+<br>
+
+✅ 예상 결과:  
+개발1팀 부장 -> 개발부 일정, 개발부에 속한 모든 하위팀 일정  
+개발2팀 김사원 -> 개발부 일정, 개발2팀 일정  
+이런식으로 부서장이면 부서의 모든 일정을 확인할 수 있어야 하고,  
+일반 직원 이라면 자신이 속한 부서의 일정과 자신이 속한 팀의 일정만 확인 가능해야 한다  
+
+<br>
+
+먼저 세션에서 부서장이 맞는지 확인하는 로직을 수행하고
+<img width="719" alt="image" src="https://github.com/user-attachments/assets/06db830b-1479-4dbb-9287-eefbbbffeac8">
+
+일반 직원의 권한이라면 아래 로직을 수행한다.  
+<img width="762" alt="image" src="https://github.com/user-attachments/assets/f31f4ec3-2a2e-4db7-affe-a696fa712bc6">
+
+
