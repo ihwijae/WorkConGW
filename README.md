@@ -425,7 +425,7 @@ $ cd WorkConGW
 
 ## 일정관리 트러블 슈팅
 <details>
- <surmmary>일정관리 권한별 인서트</surmmary>
+<summary>일정관리 권한별 인서트</summary>
 
 ❗️ 기존에는 우리 프로젝트의 조직도는 부서에도 직원이 들어가고, 팀에도 들어가있었다  
 그래서 권한별 등록은 생각하지 않고 DEPT_ID를 가져와서 해당 속한 부서 또는 팀 일정을 등록할 . 수있었는데,  
@@ -442,6 +442,14 @@ $ cd WorkConGW
 먼저 등록폼 컨트롤러에 부서장이라면 부서와, 팀 리스트를 따로 넘겨주었다  
 그 이유는 등록할때, 부서일정과 팀 일정의 코드가 다르다  
 <img width="688" alt="image" src="https://github.com/user-attachments/assets/f346dc9d-fd21-4981-b57f-130b0411bb6a">
+<img width="811" alt="image" src="https://github.com/user-attachments/assets/b3bab0a5-ae05-4198-a232-ea29365d57e0">
+
+<br>
+그리고 service단 에서 각 코드별로 dept_Id를 다르게 넣어줬다  
+이유는 일정을 조회 할때 팀원들은 dept_Id로 비교한다 즉, dept_Id로 해당 팀 일정을 조회하는 것  
+그래서 일정 그룹 별로 dept_Id를 다르게 넣어줘야 했다  
+<img width="679" alt="image" src="https://github.com/user-attachments/assets/650d8f17-6d09-4d36-a169-9e1621b65a89">
+
 
  
 </details>
