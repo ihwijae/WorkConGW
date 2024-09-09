@@ -454,7 +454,7 @@ $ cd WorkConGW
 <br>
 
 <details>
-<summary>일정관리 권한별 인서트</summary>
+<summary>일정관리 권한별 조회</summary>
 
 ❗️일정관리 기능에서 일정 조회시 권한 별로 셀렉 결과가 달라야 하는데 기존에는 이런 권한별 셀렉을 생각하지 못했다  
 
