@@ -453,6 +453,7 @@ $ cd WorkConGW
 
 <br>
 
+<details>
 <summary>일정관리 권한별 인서트</summary>
 
 ❗️일정관리 기능에서 일정 조회시 권한 별로 셀렉 결과가 달라야 하는데 기존에는 이런 권한별 셀렉을 생각하지 못했다  
@@ -473,4 +474,7 @@ $ cd WorkConGW
 일반 직원의 권한이라면 아래 로직을 수행한다.  
 <img width="762" alt="image" src="https://github.com/user-attachments/assets/f31f4ec3-2a2e-4db7-affe-a696fa712bc6">
 
+물론 해당 맞는 쿼리로 부서장이라면 부서의 하위팀 일정을 모두 조회하는 쿼리문,  
+부서장이 아니라면  해당 맞는 팀, 부서만 조회하는 쿼리문을 작성했다.
+</details>
 
